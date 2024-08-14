@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="password">Password</string>
+    <string name="log_in">LOG IN</string>
+    <string name="email">Email</string>
+    <string name="admin">Admin</string>
+    <string name="login">Login</string>
+    <string name="sign_in">Sign IN</string>
+    <string name="user">User</string>
+    <string name="input_data">Input Data</string>
+    <string name="surah">Surah</string>
+    <string name="ayat">Ayat</string>
+    <string name="tarannum">Tarannum</string>
+    <string name="reciter">Reciter</string>
+    <string name="input_surah">Input Surah</string>
+    <string name="no_surah">No.Surah</string>
+    <string name="Choose_State">No.Surah</string>
+</resources>

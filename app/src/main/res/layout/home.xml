@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:background="@drawable/backgroundpic"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/brushstroke"
+        android:scaleType="centerCrop"
+        android:alpha="0.8"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="130dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to"
+            android:gravity="center"
+            android:textSize="23sp"
+            android:textColor="@color/black"
+            android:fontFamily=""
+            />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:text="Tarannum\nTunes"
+            android:gravity="center"
+            android:textSize="43sp"
+            android:textStyle="bold"
+            android:textColor="#0000FF"
+            />
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:src="@drawable/quran"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="100dp"
+            />
+
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/btnAdmin"
+            android:layout_margin="5dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonmain"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:text="ADMIN"/>
+
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/btnUser"
+            android:layout_margin="5dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonmain"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:text="USER"/>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

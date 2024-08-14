@@ -1,0 +1,223 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/LSbg"
+    tools:context=".TestUi">
+
+        <!--Welcome!-->
+        <TextView
+            android:id="@+id/Welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mainwelcome"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:fontFamily="arial"
+            android:textSize="26sp"
+            android:layout_marginBottom="10dp" />
+
+        <!--Landslide Detection System-->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/maintitle"
+            android:textAlignment="center"
+            android:textColor="#004F98"
+            android:fontFamily="arial"
+            android:textSize="35sp"
+            android:layout_marginBottom="10dp" />
+
+        <!--Landslide Picture-->
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:layout_width="260dp"
+            android:layout_height="190dp"
+            android:src="@drawable/landslide"
+            android:layout_marginBottom="20dp"/>
+
+        <Spinner
+            android:background="@drawable/inputtext"
+            android:id="@+id/stateChoose"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:spinnerMode="dropdown"
+            android:layout_gravity="center"
+            android:padding="13dp"/>
+
+        <!--Button 'Next'-->
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:background="@color/buttoncolor"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:text="Next" />
+
+    </LinearLayout>
+
+<!--    menifest code-->
+<!--    <?xml version="1.0" encoding="utf-8"?>-->
+<!--    <manifest xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        package="com.example.lanslidedetectionsystem">-->
+
+<!--        <application-->
+<!--            android:allowBackup="true"-->
+<!--            android:icon="@mipmap/ic_launcher"-->
+<!--            android:label="@string/app_name"-->
+<!--            android:roundIcon="@mipmap/ic_launcher_round"-->
+<!--            android:supportsRtl="true"-->
+<!--            android:theme="@style/Theme.LanslideDetectionSystem">-->
+<!--            <activity android:name=".MainActivity">-->
+<!--                <intent-filter>-->
+<!--                    <action android:name="android.intent.action.MAIN" />-->
+
+<!--                    <category android:name="android.intent.category.LAUNCHER" />-->
+<!--                </intent-filter>-->
+<!--            </activity>-->
+
+<!--            <activity android:name=".ViewStatusActivity">-->
+<!--                <intent-filter>-->
+<!--                    <action android:name="android.intent.action.MAIN" />-->
+
+<!--                    <category android:name="android.intent.category.LAUNCHER" />-->
+<!--                </intent-filter>-->
+<!--            </activity>-->
+
+<!--            <activity android:name=".RiskLevelInfoActivity">-->
+<!--                <intent-filter>-->
+<!--                    <action android:name="android.intent.action.MAIN" />-->
+
+<!--                    <category android:name="android.intent.category.LAUNCHER" />-->
+<!--                </intent-filter>-->
+<!--            </activity>-->
+
+<!--            <activity android:name=".FullReportActivity">-->
+<!--                <intent-filter>-->
+<!--                    <action android:name="android.intent.action.MAIN" />-->
+
+<!--                    <category android:name="android.intent.category.LAUNCHER" />-->
+<!--                </intent-filter>-->
+<!--            </activity>-->
+
+<!--            <activity android:name=".DailyReportActivity">-->
+<!--                <intent-filter>-->
+<!--                    <action android:name="android.intent.action.MAIN" />-->
+
+<!--                    <category android:name="android.intent.category.LAUNCHER" />-->
+<!--                </intent-filter>-->
+<!--            </activity>-->
+
+<!--            <activity android:name=".WeeklyReportActivity">-->
+<!--                <intent-filter>-->
+<!--                    <action android:name="android.intent.action.MAIN" />-->
+
+<!--                    <category android:name="android.intent.category.LAUNCHER" />-->
+<!--                </intent-filter>-->
+<!--            </activity>-->
+
+<!--        </application>-->
+
+<!--    </manifest>-->
+
+
+<!--    string resource-->
+<!--    <resources>-->
+<!--        <string name="app_name">Lanslide Detection System</string>-->
+<!--        <string name="mainwelcome">Welcome!</string>-->
+<!--        <string name="maintitle">Landslide Detection System</string>-->
+<!--        <string name="maincountry">Country: Malaysia</string>-->
+<!--        <string name="maincity">City: Melaka</string>-->
+<!--        <string name="mainsensorarea">Sensor Area: Bukit Beruang</string>-->
+<!--        <string name="mainnextbutton">Next</string>-->
+<!--        <string name="viewstatustitle">Risk Level Today</string>-->
+<!--        <string name="viewstatusday">Day: Friday</string>-->
+<!--        <string name="viewstatusdate">Date: 3/3/2023</string>-->
+<!--        <string name="viewstatussoilmoisture">Soil moisture  :</string>-->
+<!--        <string name="viewstatus25">  25%</string>-->
+<!--        <string name="viewstatuslandslide">Lanslide          :</string>-->
+<!--        <string name="viewstatusnull">  Null</string>-->
+<!--        <string name="viewstatusresponse">Response       :</string>-->
+<!--        <string name="viewstatusnoaction">   No Action</string>-->
+<!--        <string name="viewstatusfullreportbutton">Full Report</string>-->
+<!--        <string name="viewstatusrisklevelinfobutton">Risk Level Info</string>-->
+<!--        <string name="viewstatusbackbutton">Back</string>-->
+<!--        <string name="risklevelinfotitle">Risk Level Info</string>-->
+<!--        <string name="risklevelinfolandslide">Landslide</string>-->
+<!--        <string name="risklevelinfonull">     Null</string>-->
+<!--        <string name="risklevelinfonulldescription">No lift detected. Very low probability of landslide</string>-->
+<!--        <string name="risklevelinfowatch">   Watch</string>-->
+<!--        <string name="risklevelinfowatchdescription">Precautionary warning of slope becoming unstable state</string>-->
+<!--        <string name="risklevelinfoalert">    Alert</string>-->
+<!--        <string name="risklevelinfoalertdescription">Warning of unstable slope</string>-->
+<!--        <string name="risklevelinfodanger">   Danger</string>-->
+<!--        <string name="risklevelinfodangerdescription">Warning of landslide occur</string>-->
+<!--        <string name="risklevelinfosoilmoisture">Soil moisture</string>-->
+<!--        <string name="risklevelinfo1to25">     1% - 25%</string>-->
+<!--        <string name="risklevelinfo26to50">   26% - 50%</string>-->
+<!--        <string name="risklevelinfo51to75">   51% - 75%</string>-->
+<!--        <string name="risklevelinfo76to100">  76% - 100%</string>-->
+<!--        <string name="risklevelinforesponse">Response</string>-->
+<!--        <string name="risklevelinfonoaction">   No Action</string>-->
+<!--        <string name="risklevelinfomonitor">     Monitor</string>-->
+<!--        <string name="risklevelinfoemergency">   Emergency</string>-->
+<!--        <string name="risklevelinfodangerr">      Danger</string>-->
+<!--        <string name="fullreporttitle">Full Report</string>-->
+<!--        <string name="fullreportday">Day: Friday</string>-->
+<!--        <string name="fullreportdate">Date: 3/3/2023</string>-->
+<!--        <string name="fullreportdailybutton">Daily</string>-->
+<!--        <string name="fullreportweeklybutton">Weekly</string>-->
+<!--        <string name="fullreportbackbutton">Back</string>-->
+<!--        <string name="dailyreportday">Day    :    Friday</string>-->
+<!--        <string name="dailyreportdate">Date  :    3/3/2023</string>-->
+<!--        <string name="dailyreporttitle">Report: Daily</string>-->
+<!--        <string name="dailyreportupdated">Updated: 6pm</string>-->
+<!--        <string name="dailyreportmon">Mon</string>-->
+<!--        <string name="dailyreporttue">Tue</string>-->
+<!--        <string name="dailyreportwed">Wed</string>-->
+<!--        <string name="dailyreportthu">Thu</string>-->
+<!--        <string name="dailyreportfri">Fri</string>-->
+<!--        <string name="dailyreportsat">Sat</string>-->
+<!--        <string name="dailyreportsun">Sun</string>-->
+<!--        <string name="dailyreportsoilmoisture">Soil\nmoisture</string>-->
+<!--        <string name="dailyreport25">    25%</string>-->
+<!--        <string name="dailyreport50">    50%</string>-->
+<!--        <string name="dailyreport66">    66%</string>-->
+<!--        <string name="dailyreport80">    80%</string>-->
+<!--        <string name="dailyreport90">    90%</string>-->
+<!--        <string name="dailyreport51">    51%</string>-->
+<!--        <string name="dailyreport25b">    25%</string>-->
+<!--        <string name="dailyreportlandslide">Landslide</string>-->
+<!--        <string name="dailyreportnull">      Null</string>-->
+<!--        <string name="dailyreportwatch">     Watch</string>-->
+<!--        <string name="dailyreportalert">     Alert</string>-->
+<!--        <string name="dailyreportdanger">     Danger</string>-->
+<!--        <string name="dailyreportdangerr">     Danger</string>-->
+<!--        <string name="dailyreportalertt">     Alert</string>-->
+<!--        <string name="dailyreportnulll">     Null</string>-->
+<!--        <string name="dailyreportbackbutton">Back</string>-->
+<!--        <string name="weeklyreportday">Day    :    Friday</string>-->
+<!--        <string name="weeklyreportdate">Date  :    3/3/2023</string>-->
+<!--        <string name="weeklyreporttitle">Report: Weekly</string>-->
+<!--        <string name="weeklyreportupdate">Updated: Monday,12am</string>-->
+<!--        <string name="weeklyreportweek1">Week 1</string>-->
+<!--        <string name="weeklyreportweek2">Week 2</string>-->
+<!--        <string name="weeklyreportweek3">Week 3</string>-->
+<!--        <string name="weeklyreportweek4">Week 4</string>-->
+<!--        <string name="weeklyreportsoilmoisture">Soil\nmoisture</string>-->
+<!--        <string name="weeklyreportnull">    Null</string>-->
+<!--        <string name="weeklyreportwatch">  Watch</string>-->
+<!--        <string name="weeklyreportalert">   Alert</string>-->
+<!--        <string name="weeklyreportdanger"> Danger</string>-->
+<!--        <string name="weeklyreportlandslide">Landslide</string>-->
+<!--        <string name="weeklyreportnoaction"> No Action</string>-->
+<!--        <string name="weeklyreportmonitor">   Monitor</string>-->
+<!--        <string name="weeklyreportemergency">Emergency</string>-->
+<!--        <string name="weeklyreportdangerr">    Danger</string>-->
+<!--        <string name="weeklyreportbackbutton">Back</string>-->
+<!--    </resources>-->
